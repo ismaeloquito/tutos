@@ -1,0 +1,82 @@
+/*Vinculación de fuentes */
+/*Ismael Ochoa Rodríguez*/
+
+@font-face {
+     font-family: 'nombrefuente';
+     src: url([[personaliza/font:theme_lambda|Arial.eot]]) format('embedded-opentype'),
+     src: url([[personaliza/font:theme_lambda|Arial.eot]]);
+          url([[personaliza/font:theme_lambda|Arial.woff]]) format('woff'),
+          url([[personaliza/font:theme_lambda|Arial.woff2]]) format('woff2'),
+          url([[personaliza/font:theme_lambda|Arial.ttf]]) format('truetype'),
+          url([[personaliza/font:theme_lambda|Arial.svg]]) format('svg');
+     font-weight: normal;
+     font-style: normal;
+   }
+ 
+ /*Cambio de letra para la etiqueta body*/
+ /*Ismael Ochoa Rodríguez*/
+ body {
+   font-family: Arial;
+ }
+ 
+ /*Cambio de letra para las etiquetas de los encabezados*/
+ /*Ismael Ochoa Rodríguez*/
+ h1, h2, h3, h4, h5, h6 {
+   font-family: Arial;
+ }
+ 
+ /*Cambio de ícono de la sección Administración*/
+ /*Ismael Ochoa Rodríguez*/
+ .block_settings .card-title::before, .block_admin_bookmarks .card-title::before {
+     background-color: #8cc63f;
+     content: "\f044";
+ }
+ 
+ 
+ /*Modificación que se hizo pero no se comentó*/
+ /*¿¿¿¿¿?????*/
+ #buttonsectioncontainer .buttonsection.sectionvisible {
+     background: #8ec63f;
+     color: #fff;
+     border-color: #8ec63f;
+ }
+ 
+ /*¿¿¿¿¿?????*/
+ /*Termina Modificación que se hizo pero no se comentó*/
+ 
+ /*Cambio de color para los íconos de Redes Sociales en el Pie de Página*/
+ /*Ismael Ochoa Rodríguez*/
+ 
+ #page-footer .socials .social_icons a.social {
+     background: #FFF;
+ }
+ 
+ #page-footer {
+     color: #FFF;
+ }
+ 
+#page-footer .socials .social_icons a.social {
+     background: #FF0000;
+ }
+ 
+.fa-facebook-f:before, .fa-facebook:before {
+     content: "\f09a";
+     color: #FFFFFF;
+ }
+ 
+.fa-twitter:before {
+     content: "\f099";
+    color: #FFFFFF;
+ }
+ 
+.fa-youtube:before {
+     content: "\f167";
+     color: #FFFFFF;
+ }
+ 
+ /*Ismael Ochoa Rodríguez*/
+ /*Termina Cambio de color para los íconos de Redes Sociales en el Pie de Página*/
+ 
+
+ 
+ 

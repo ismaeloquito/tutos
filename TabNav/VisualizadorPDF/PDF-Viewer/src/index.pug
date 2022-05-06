@@ -1,0 +1,15 @@
+.container.mx-auto.flex.flex-col.h-screen
+    .flex.justify-between.my-4
+        h1.font-bold PDF Viewer
+        nav.nav.justify-content-end
+            a#prev.border.rounded.py-2.px-4.bg-blue-500(href="#") prev
+            a#next.border.rounded.py-2.px-4.bg-blue-500(href="#") next
+            a#download.border.rounded.py-2.px-4.bg-blue-500(href="#") download
+    div.flex-grow
+        canvas#pdfviewer
+            p Loading...   
+    .pages.text-center.my-4
+        span.mr-2 Page
+        span#currentPage 0
+        span.mx-1 /
+        span#totalPages 0

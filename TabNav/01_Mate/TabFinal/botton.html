@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        .row-container {
+            background-color: aquamarine;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-content: center;
+            height: 300px;            
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-content: center;
+        }
+
+        .centered-row {
+            justify-content: center;
+        }
+
+        .centered-row>* {
+            margin: 0px 10px 0px 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    </head>
+
+    <body>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <div class="row-container">
+
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="form-group">
+                    <label for="fs7 m-0 text-secondary">
+                        Razón social
+                        <span class="text-danger">*</span>
+                    </label>
+                    <select class="form-control form-control-sm">
+                        <option value="0" selected disabled>Selecciona una razón social</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <div class="form-group">
+                    <label for="fs7 m-0 text-secondary">
+                        Sucursal
+                        <span class="text-danger">*</span>
+                    </label>
+                    <select class="form-control form-control-sm">
+                        <option value="0" selected disabled>Selecciona una sucursal</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <div class="form-group">
+                    <label for="fs7 m-0 text-secondary">
+                        Departamento
+                        <span class="text-danger">*</span>
+                    </label>
+                    <select class="form-control form-control-sm">
+                        <option value="NEW_CAR">Autos nuevos</option>
+                    </select>
+                </div>
+            </div>
+    
+      </div>
+
+      <div class="row centered-row">
+
+        <button class="btn btn-sm btn-outline-secondary">
+            <i class="fas fa-search"></i> Buscar
+        </button>
+        <button class="btn btn-sm btn-outline-secondary">
+            <i class="fas fa-eraser"></i> Limpiar
+        </button>
+        <button class="btn btn-sm btn-outline-secondary">
+            <i class="fas fa-eraser"></i> Enviar
+        </button>
+
+      </div>
+
+    </div>
+    </body>
+
+</html>

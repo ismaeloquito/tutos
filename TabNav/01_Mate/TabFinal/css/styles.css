@@ -1,0 +1,309 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: "Lato", sans-serif;
+}
+/* Style the pest */
+.pest {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #dff0d8;
+  width: 18%;
+  height: 615px;
+}
+/* Style the buttons inside the pest */
+.pest button {
+  display: block;
+  background-color: #a1d18d;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: 2px 0 2px 0 solid black;
+  border-radius: 12px;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+/* Change background color of buttons on hover */
+.pest button:hover {
+  background-color: #b5d1a8;
+  padding-right: 25px;
+}
+/* Create an active/current "pest button" class */
+.pest button.active {
+  background-color: #8ab973;
+  transform: translateY(1px);
+}
+/* Style the pest content */
+.contenidopest {
+  float: left;    
+  padding: 0 12px;  
+  border: 1px solid #ccc;
+  /*background-color: #035926;
+  color:#fff;*/
+  width: 70%;
+  border-left: none;
+  height: 615px;
+}
+.contenidopest h3{
+    font-weight: 800 !important;
+}
+
+.btnCont-Verde {
+  background-color: #dff0d8;
+  color: black;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 8px 50px;
+  cursor: pointer;
+  text-decoration: none; 
+}
+.btnCont-Verde:hover {
+  background-color: #035926;
+    color: white;
+    border: 2px solid #c0c0c0;
+}
+.contenedorColumnas{  
+  display: flex;  
+}
+.colIzq{
+  width:20%;  
+}
+.colDer{
+  width:80%;  
+}
+.colIzq01{
+  width:50%;
+  text-align: center;
+}
+.colDer01{
+  width:50%;
+  text-align: center;  
+}
+
+.contTresCol{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;  
+}
+
+.fraccionesEquiv{
+  text-align: center;
+  height: 150px;
+}
+.fraccionesEquiv > img{  
+  height: 80px;  
+}
+.fila{
+  
+  display: flex;
+  width: 100%;
+  height: 150px;
+  justify-content: center;
+  align-items: center;
+}
+
+.centraImg{  
+  display: flex;
+  justify-content: center; 
+  height: 70%;  
+}
+
+.enlaces{  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  height: 200px;
+}
+.enlaces>*{
+  margin: 0px 10px 5px 10px;
+}
+
+/******************************************************************/
+/******************************************************************/
+
+@media only screen and (max-width: 1100px) {
+  body {    
+    display:flex;
+    flex-direction: column;
+  }
+  .pest {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #dff0d8;
+    width: 100%;
+    height: 615px;
+  }
+  .contenidopest {
+    float: left;    
+    padding: 0 12px;  
+    border: 1px solid #ccc;
+    /*background-color: #035926;
+    color:#fff;*/
+    width: 100%;
+    border-left: none;
+    height: 615px;
+  }
+  .contenedorColumnas{
+    display: flex;    
+  }
+  
+  /*.contTresCol{
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+  }*/
+  .contTresCol > div{
+    width: 100%;
+    height: 200px;
+  }
+
+  .fraccionesEquiv{
+    text-align: center;
+  }
+  .fraccionesEquiv > img{  
+    height: 70px;  
+  }
+
+  .colIzq{
+    width:30%;  
+  }
+  .colDer{
+    width:70%;  
+  }
+ 
+  .fraccionesEquiv > img{   
+    height: 90px;    
+  }
+}
+
+@media only screen and (max-width: 699px) {
+
+  .pest {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #dff0d8;
+    width: 100%;
+    height: 615px;
+  }
+  .contenidopest {
+    float: left;    
+    padding: 0 12px;  
+    border: 1px solid #ccc;
+    text-align: justify;
+    /*background-color: #035926;
+    color:#fff;*/
+    width: 100%;
+    border-left: none;
+    height: 615px;
+  }
+  .contenedorColumnas{
+    display: flex;  
+  }
+  .colIzq{
+    width:40%;  
+  }
+  .medio{  
+    position:absolute;
+    left:40%;  
+    bottom:10px;   
+  }
+  .colDer{
+    width:60%;  
+  }
+  /*.contTresCol{
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+  }
+  .contTresCol > div{
+    width: 100%;
+  }
+ 
+  .fraccionesEquiv > img{   
+    height: 80px;    
+  }*/
+}
+@media only screen and (max-width: 450px) {
+
+  .pest {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #dff0d8;
+    width: 100%;
+    height: 615px;
+  }
+  .contenidopest {
+    float: left;    
+    padding: 0 12px;  
+    border: 1px solid #ccc;
+    font-size: 16px;
+    /*background-color: #035926;
+    color:#fff;*/
+    width: 100%;
+    border-left: none;
+    height: 615px;
+  }
+  .contenedorColumnas{
+    display: flex;
+    flex-direction: column;  
+  }
+  .colIzq{
+    width:100%;  
+  }
+  .colDer{
+    width:100%;  
+  }
+  .colIzq01{
+    width:100%;
+    text-align: center;
+  }
+  .colDer01{
+    width:100%;
+    text-align: center;  
+  }
+
+  .contTresCol{
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+  }
+
+  .fraccionesEquiv > img{   
+    height: 70px;    
+  }
+  .centraImg{  
+    display: flex;
+    justify-content: center; 
+    height: 45%;  
+  }
+  .enlaces{  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    height: 200px;
+  }
+  .btnCont-Verde {
+    background-color: #dff0d8;
+    color: black;
+    border: 2px solid black;
+    width: 420px;
+    border-radius: 10px;
+    padding: 8px 50px;
+    cursor: pointer;
+    text-align:center;
+    text-decoration: none; 
+  }
+}
+
+
+/*.contenidopest .iesap-animate-bottom{
+    position:relative;animation:animatebottom 0.4s
+}
+@keyframes animatebottom{
+    from{bottom:-715px;opacity:0} to{bottom:0;opacity:1}}

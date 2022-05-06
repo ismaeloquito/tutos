@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pestañas</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <h2>Vertical Tabs</h2>
+    <p>Click on the buttons inside the tabbed menu:</p>
+    <div class="pest">
+        <button class="pestenlace" onclick="openPest(event, '001')" id="defaultOpen">Fracciones</button>
+        <button class="pestenlace" onclick="openPest(event, '002')">Fracciones Equivalentes</button>
+        <button class="pestenlace" onclick="openPest(event, '003')">Suma de Fracciones I</button>
+        <button class="pestenlace" onclick="openPest(event, '004')">Suma de Fracciones II</button>
+        <button class="pestenlace" onclick="openPest(event, '005')">Resta de Fracciones</button>
+        <button class="pestenlace" onclick="openPest(event, '006')">Multiplicación</button>
+        <button class="pestenlace" onclick="openPest(event, '007')">División de Fracciones</button>
+        <button class="pestenlace" onclick="openPest(event, '008')">Factores Primos</button>
+        <button class="pestenlace" onclick="openPest(event, '009')">mcm</button>
+    </div>
+
+    <div id="001" class="contenidopest">
+        <h3>Fracciones</h3>
+        <p>
+            Los números fraccionarios, también llamados racionales, surgen por la necesidad de resolver problemas que
+            involucran la división de un todo en partes iguales, como repartir una pizza, dividir un terreno e incluso a
+            la hora de aplicar un impuesto. Se han usado desde antes de que se inventara el cero, e incluso antes que
+            los números negativos.
+            <br>
+            <br>
+            Un número racional es aquel que puede representarse por una relación o cociente de dos números enteros (a y
+            b), siempre y cuando el denominador sea distinto de cero.
+            <br>
+            <br>
+            Una fracción está constituida por dos expresiones, una debajo de la otra y separadas por una línea. En la
+            parte superior tenemos al numerador y en la inferior al denominador. El numerador habla del número de partes
+            que se toman de un entero y el denominador del número de partes en el que ha sido dividio un todo.
+            <br>
+        </p>
+        <div class="contenedorColumnas">
+            <div class="colIzq">
+                <p style="text-align: center;">
+                    <img src="./img/fracciones/ayb.png" alt="Partes de la Fracción, Numerador y Denominador" width="200">
+                </p>
+            </div>
+            <div class="colDer">
+                <ol>
+                    <li>b debe ser <img src="./img/fracciones/DistintoDe.png" alt="Símbolo Distinto de" width="15"> 0 para que la
+                        división no quede indefinida. </li>
+                    <li>Los números enteros son parte de los <img src="./img/fracciones/Racionales.png" alt="Símbolo de Números Racionales" width="20">, con b=1.</li>
+                    <li>Cuando a=1, la fracción no puede reducirse como otra fracción, siendo la representación de una
+                        parte igual a un todo. <img src="./img/fracciones/unMedio.png" alt="imagen de un medio" width="15">, un
+                        medio; <img src="./img/fracciones/unTercio.png" alt="imagen de un tercio" width="15">, un tercio; <img
+                            src="./img/fracciones/unCuarto.png" alt="imagen de un cuarto" width="15">, un cuarto.</li>
+                </ol>
+            </div>
+        </div>
+        <p>
+            Existen dos tipos de fracciones, las propias y las impropias.
+        </p>
+        <div class="contenedorColumnas">
+            <div class="colIzq01">
+                <p style="text-align: center;">
+                    En las primeras el numerador es menor al denominador.
+                </p>
+                <img src="./img/fracciones/fraccionPropia.png" alt="Fracción Propia" height="80">
+            </div>
+            <div class="colDer01">
+                <p style="text-align: center;">
+                    En las segundas el numerador es mayor o igual al denominador.
+                </p>
+                <img src="./img/fracciones/fraccionImpropia.png" alt="Fracción Impropia" height="80">
+            </div>
+        </div>
+    </div>
+
+
+    <div id="002" class="contenidopest">
+        <h3>Fracciones Equivalentes</h3>
+        <p>
+            Son aquellas que representan una misma cantidad.
+        </p>
+        <br>
+        <div class="contTresCol">
+            <div class="col01">
+                <div class="fraccionesEquiv">
+                    <img src="./img/fraccEquivalentes/dosTercios.png" alt="Dos Tercios" >
+                </div>
+            </div>
+            <div class="col02">
+                <div class="fraccionesEquiv">
+                    <img src="./img/fraccEquivalentes/cuatroSextos.png" alt="Cuatro Sextos" >
+                </div>
+            </div>
+            <div class="col03">
+                <div class="fraccionesEquiv">
+                    <img src="./img/fraccEquivalentes/ochoDoceavos.png" alt="Ocho Doceavos" >
+                </div>
+            </div>
+        </div>
+        <br>        
+        <br>        
+    </div>    
+    <div id="003" class="contenidopest">
+        <h3>Suma de Fracciones I</h3>
+        <h4>Suma de fracciones con un mismo denominador</h4>
+        <p>
+            En este caso, basta sumar los numeradores y pasar el denominador como resultado.
+        </p>
+        <div class="contenedorColumnas">
+            <div class="colIzq01">
+                <div class="mismoDenom">
+                    <img src="./img/SumaFraccionesPropias/unOctavo.png" alt="Dos Tercios" >
+                </div>
+            </div>
+            <div class="colDer01">
+                <div class="mismoDenom">
+                    <img src="./img/SumaFraccionesPropias/dosOctavos.png" alt="Cuatro Sextos" >
+                </div>
+            </div>            
+        </div>
+        <div class="fila">
+            <div class="mismoDenom">
+                <img src="./img/SumaFraccionesPropias/cuatroOctavos.png" alt="Ocho Doceavos" >
+            </div>
+        </div>        
+        <div class="contenedorColumnas">
+            <div class="colIzq01"> 
+                <p>
+                    Suma de dos fracciones
+                </p>               
+                <img src="./img/SumaFraccionesPropias/sumaDosFracciones.png" alt="Fracción Propia" class="reduc">
+            </div>
+            <div class="colDer01"> 
+                <p>
+                    Suma de tres fracciones
+                </p>               
+                <img src="./img/SumaFraccionesPropias/sumaTresFracciones.png" alt="Fracción Impropia" class="reduc">
+            </div>
+        </div>                
+    </div>
+    <div id="004" class="contenidopest">
+        <h3>Suma de Fracciones II</h3>
+        <h4>Suma de Fracciones con Distinto Denominador</h4>
+        <p>
+            En este caso hablamos de dos fracciones pertenecientes cada una a una unidad de distinto tamaño. Por ello es que debemos transformarlas a partes de las mismas dimensiones. Para conseguirlo, debemos multiplicar el denominador de la segunda por el numerador y denominador de la primera expresión. Posteriormente, multiplicaremos el denominador de la primera por el numerador y denominador de la segunda expresión.
+        </p>
+        <div class="centraImg">                         
+            <img src="./img/SumaRestaFraccionesDistintoDenominador/SumaFraccionesDistintoDenominador.png" alt="Fracción Impropia">
+        </div>        
+    </div>
+    <div id="010" class="contenidopest">
+        <h3>Suma de Fracciones con Distinto Denominador</h3>
+        <p>
+            En este caso hablamos de dos fracciones pertenecientes cada una a una unidad de distinto tamaño. Por ello es que debemos transformarlas a partes de las mismas dimensiones. Para conseguirlo, debemos multiplicar el denominador de la segunda por el numerador y denominador de la primera expresión. Posteriormente, multiplicaremos el denominador de la primera por el numerador y denominador de la segunda expresión. 
+        </p>
+        <div class="centraImg">                         
+            <img src="./img/SumaRestaFraccionesDistintoDenominador/SumaFraccionesDistintoDenominador.png" alt="Fracción Impropia">
+        </div>
+        <div class="enlaces">
+            <button type="button" class="btnCont-Verde" onclick="openPest(event, '011')">Resta de fracciones con Distinto Denominador</button>        
+        </div>
+    </div>
+    <div id="005" class="contenidopest">
+        <h3>Resta de Fracciones con Distinto Denominador</h3>
+        <p>
+            El procedimiento es el mismo que el de la suma para la conversión de fracciones a una misma unidad. Una vez habiéndola hecho, se habrán de restar las fracciones.            
+        </p>
+        <div class="centraImg">                         
+            <img src="./img/SumaRestaFraccionesDistintoDenominador/RestaFraccionesDistintoDenominador.png" alt="Resta de fracciones con distinto denominador">
+        </div>
+    </div>
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    
+    
+    <div id="006" class="contenidopest">
+        <h3>Valor Absoluto</h3>
+        <p>
+            Es el número que representa a una cantidad sin importar su signo o dirección. Se representa por la cantidad
+            encerrada entre barras. Así el valor absoluto de -4 es 4. Siendo lo mismo |-4|=4. También se puede describir
+            como la distancia que hay entre el cero y el punto que representa a la cantidad sobre la recta numérica.
+        </p>
+    </div>
+    <div id="007" class="contenidopest">
+        <h3>Relación de Orden</h3>
+        <p>
+            Es la jerarquía que se guarda entre operaciones distintas.
+        </p>
+        <ol class="iesap-animate-bottom">
+            <li>se resuelven primero las raíces y potencias</li>
+            <li>en segundo lugar, multiplicaciones y divisiones</li>
+            <li>En tercer lugar, sumas y restas</li>
+            <li>Siempre de izquierda a derecha</li>
+        </ol>
+        <img class="iesap-animate-bottom"
+            src="./img/JerarquiaOperaciones.png"
+            alt="Jerarquia de Operaciones" width="200">
+    </div>
+    <div id="008" class="contenidopest">
+        <h3>Descomposición de números en factores primos</h3>
+        <p>
+            Un número primo sólo es diisible entre sí mismo y la unidad.
+            (Matemáticas Simplificadas. pág. 36)
+            <br>
+            <br>
+            Para obtener los primeros n números primos de los números naturales se puede utilizar la criba de
+            Eratóstenes, la cual consiste en hacer una tabla con los números del 1 hasta n.
+            <br>
+            <br>
+        </p>
+        <img class="iesap-animate-bottom"
+            src="./img/JerarquiaOperaciones.png"
+            alt="Jerarquia de Operaciones" width="200">
+    </div>
+
+    <div id="009" class="contenidopest">
+        <h3>Mínimo Común Múltiplo (mcm)</h3>
+        <p>
+            Es el menor de todos los múltiplos comunes de dos números naturales o más.
+            Para ejemplificarlo, tomaremos los múltiplos de 3, 5 y 6.
+            <br>
+            <br>
+            3, 6, 9, 12, 15, 18, 21, 24, 27, <a class="btn btn-danger btn-lg" role="button">30</a>, 33, 36,...
+            <br>
+            <br>
+            5, 10, 15, 20, 25, <a class="btn btn-danger btn-lg" role="button">30</a>, 35, 40,...
+            <br>
+            <br>
+            6, 12, 18, 24, <a class="btn btn-danger btn-lg" role="button">30</a>, 36, 42, 48,...
+            <br>
+            <br>
+            Para obtener el mínimo común múltiplo no siempre es conveniente escribir todos los múltiplos o una lista de
+            ellos.
+            <br>
+            <br>
+            Para obtener el mínimo común múltiplo se dividen los coeficientes entre el primer número primo que es 2.
+        </p>
+        <pre class="iesap-animate-bottom">
+                        3 5 6 | 2
+                        3 5 3 | 3
+                        1 5 1 | 5
+                          1   |
+            </pre>
+        <p>
+            En este caso, el mínimo común múltiplo es 30, porque 2*3*5=30
+        </p>
+
+    </div>
+
+
+
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,276 @@
+* {
+    box-sizing: border-box
+}
+body {
+    font-family: "Lato", sans-serif;
+}
+
+/* Style the pest */
+.pest {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #dff0d8;
+  width: 18%;
+  height: 615px;
+}
+
+/* Style the buttons inside the pest */
+.pest button {
+  display: block;
+  background-color: #a1d18d;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: 2px 0 2px 0 solid black;
+  border-radius: 12px;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.pest button:hover {
+  background-color: #b5d1a8;
+  padding-right: 25px;
+}
+
+/* Create an active/current "pest button" class */
+.pest button.active {
+  background-color: #8ab973;
+  transform: translateY(1px);
+}
+
+/* Style the pest content */
+.contenidopest {
+  float: left;    
+  padding: 0 12px;  
+  border: 1px solid #ccc;
+  /*background-color: #035926;
+  color:#fff;*/
+  width: 70%;
+  border-left: none;
+  height: 615px;
+}
+.contenidopest h3{
+    font-weight: 800 !important;
+}
+
+.enlaces{  
+  height: 200px;
+  background-color:#a1d18d ;
+  position:relative;  
+}
+.left{
+  float: left;
+  position:absolute;
+  left: 10px;
+  bottom:10px;   
+}
+.medio{
+  text-align: center;
+  display: block;
+  margin-left:auto;
+  margin-right: auto;
+  overflow: auto;
+}
+
+
+
+
+/*.medio{  
+  position:absolute;
+  left:50%;  
+  bottom:10px;   
+}*/
+.right{
+  float: right;
+  position:absolute;
+  right: 10px;
+  bottom:10px; 
+}
+
+.contenedorColumnas{
+  display: flex;  
+}
+.colIzq{
+  width:20%;  
+}
+.colDer{
+  width:80%;  
+}
+.colIzq01{
+  width:50%;
+  text-align: center;
+}
+.colDer01{
+  width:50%;
+  text-align: center;  
+}
+.fraccionesEquiv{
+  text-align: center;
+}
+.fraccionesEquiv > img{  
+  height: 100px;
+  
+}
+.contTresCol{
+  display: flex;
+
+}
+.contTresCol > div{
+  width: 33.333%;
+}
+
+.fraccionesEquiv > img{
+   
+  height: 80px;
+  
+}
+/*.contTresCol > div > img{
+  width: auto;
+
+}*/
+
+/*.col01, .col02, .col03{
+  width: 10px;
+}*/
+
+.contTresCol > div >.img{
+  height: 10%;
+}
+
+
+@media only screen and (max-width: 1100px) {
+  body {    
+    display:flex;
+    flex-direction: column;
+  }
+  .pest {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #dff0d8;
+    width: 100%;
+    height: 615px;
+  }
+  .contenidopest {
+    float: left;    
+    padding: 0 12px;  
+    border: 1px solid #ccc;
+    /*background-color: #035926;
+    color:#fff;*/
+    width: 100%;
+    border-left: none;
+    height: 615px;
+  }
+  .contenedorColumnas{
+    display: flex;  
+  }
+  .colIzq{
+    width:30%;  
+  }
+  .colDer{
+    width:70%;  
+  }
+ 
+  .fraccionesEquiv > img{
+   
+    height: 90px;
+    
+  }
+}
+
+@media only screen and (max-width: 699px) {
+
+  .pest {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #dff0d8;
+    width: 100%;
+    height: 615px;
+  }
+  .contenidopest {
+    float: left;    
+    padding: 0 12px;  
+    border: 1px solid #ccc;
+    text-align: justify;
+    /*background-color: #035926;
+    color:#fff;*/
+    width: 100%;
+    border-left: none;
+    height: 615px;
+  }
+  .contenedorColumnas{
+    display: flex;  
+  }
+  .colIzq{
+    width:40%;  
+  }
+  .colDer{
+    width:60%;  
+  }
+  .medio{  
+    position:absolute;
+    left:40%;  
+    bottom:10px;   
+  }
+ 
+  .fraccionesEquiv > img{
+   
+    height: 80px;
+    
+  }
+}
+@media only screen and (max-width: 450px) {
+
+  .pest {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #dff0d8;
+    width: 100%;
+    height: 615px;
+  }
+  .contenidopest {
+    float: left;    
+    padding: 0 12px;  
+    border: 1px solid #ccc;
+    font-size: 16px;
+    /*background-color: #035926;
+    color:#fff;*/
+    width: 100%;
+    border-left: none;
+    height: 615px;
+  }
+  .contenedorColumnas{
+    display: flex;
+    flex-direction: column;  
+  }
+  .colIzq{
+    width:100%;  
+  }
+  .colDer{
+    width:100%;  
+  }
+  .colIzq01{
+    width:100%;
+    text-align: center;
+  }
+  .colDer01{
+    width:100%;
+    text-align: center;  
+  }
+ 
+  .fraccionesEquiv > img{
+   
+    height: 70px;
+    
+  }
+}
+
+
+/*.contenidopest .iesap-animate-bottom{
+    position:relative;animation:animatebottom 0.4s
+}
+@keyframes animatebottom{
+    from{bottom:-715px;opacity:0} to{bottom:0;opacity:1}}

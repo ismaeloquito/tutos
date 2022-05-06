@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+
+<body>
+    <h2>Vertical Tabs</h2>
+    <p style="font-size: 16px;">Click on the buttons inside the tabbed menu:</p>
+
+    <div class="tab">
+        <button style="font-size: 16px;" class="tablinks" onclick="openTab(event, 'Tab01')" id="defaultOpen">Leyes de los Signos</button>
+        <button style="font-size: 16px;" class="tablinks" onclick="openTab(event, 'Tab02')">Adición</button>
+        <button style="font-size: 16px;" class="tablinks" onclick="openTab(event, 'Tab03')">Resta</button>
+        <button style="font-size: 16px;" class="tablinks" onclick="openTab(event, 'Tab04')">Multiplicación</button>
+        <button style="font-size: 16px;" class="tablinks" onclick="openTab(event, 'Tab05')">División</button>
+        <button style="font-size: 16px;" class="tablinks" onclick="openTab(event, 'Tab06')">Valor Absoluto</button>
+        <button style="font-size: 16px;" class="tablinks" onclick="openTab(event, 'Tab07')">Relación de Orden</button>
+        <button style="font-size: 16px;" class="tablinks" onclick="openTab(event, 'Tab08')">Factores Primos</button>
+        <button style="font-size: 16px;" class="tablinks" onclick="openTab(event, 'Tab09')">mcm</button>
+        <button style="font-size: 16px;" class="tablinks" onclick="openTab(event, 'Tab10')">Sirap</button>
+    </div>
+
+    <div id="Tab01" class="tabcontent">
+        <h4>Unidad 1. Fundamentos Matemáticos</h4>
+        <h5>1.1 Operación con enteros</h5>
+        <p style="font-size: 16px;">Los números reales tienen signo positivo, +, o negativo, -, dependiendo hacia donde se dirigen sobre la recta
+            numérica. Los números negativos se contabilizan del cero hacia la izquierda o hacia arriba y los positivos
+            del cero hacia la derecha o hacia abajo. Para realizar operaciones entre cantidades positivas, negativas o
+            entre ambas, existen reglas claramente establecidas de manera que, al realizar cualquier operación entre dos
+            números independientemente de su signo, sea posible determinar, sin lugar a dudas, el signo resultante.</p>
+    </div>
+    <div id="Tab02" class="tabcontent">
+        <h4>Adición</h4>
+        <p style="font-size: 16px;">Para realizar la operación adición entre dos cantidades con signos iguales, se realiza la suma de ambas
+            cifras y al final se coloca el signo que ambas poseen. Por ejemplo, si se tiene la operación suma 5+9
+            entonces el resultado es positivo: 14.</p>
+        <br>
+        <p style="font-size: 16px;">Suma de dos número negativos: -5-9=-14</p>
+        <p>Álgebra, Baldor p. 46</p>
+    </div>
+    <div id="Tab03" class="tabcontent">
+        <h4>Resta</h4>
+        <p style="font-size: 16px;">La operación resta consiste en una adición de cantidades con signos diferentes. En este caso, se resuelve la
+            resta de los números, sin tomar en cuenta los signos que tengan; una vez realizado este paso, se procede a
+            colocar el signo de la cantidad mayor.</p>
+        <p style="font-size: 16px;">Por ejemplo: 7-5=2 Al resultado se le deja el signo de la cantidad más grande, siete en este caso, que por ser positivo no se
+            escribe.
+        </p>
+        <p style="font-size: 16px;">Veamos otro ejemplo: 4-9=-5 En este caso el cinco es negativo, ya que el sustraendo también lo es, es decir,
+            se conserva el signo de la cantidad mayor.
+        </p>
+        <br>
+        En operaciones con más de dos expresiones: 5-3+2-7, podemos operar primero con los negativos y después con los positivos: -7-3=-10;
+        5+2=7; finalmente 7-10=-3.
+    </div>
+    <div id="Tab04" class="tabcontent">
+        <h4>Multiplicación</h4>
+        <p style="font-size: 16px;">Dado que la letra <span style="font-style: italic;">x</span> se utiliza en álgebra, aal al que otreas letras para manejar variables, para evitar la confusión con el signo de multiplicación X, los signos empleados para este fin son &bull; o los paréntesis. </p>
+        <p style="font-size: 16px;">El producto de dos números será positivo si ambas cantidades son positivas: (5)(8)=40</p>
+        <p style="font-size: 16px;">El producto de dos números será positivo si ambas cantidades son negativas: -5 &bull;-8=40</p>
+        <p style="font-size: 16px;">Cuando solo una de las cantidades es negativa, el producto será negativo: (5)(-8)=-40 o -5&bull;8=-40</p>
+        <p style="font-size: 16px;">En resumen, si los signos de ambas cantidades son iguales, el resultado será positivo. Si los signos de ambas
+            cantidades son distintos, el resultado será negativo</p>
+    </div>
+    <div id="Tab05" class="tabcontent">
+        <h4>División</h4>
+        <p style="font-size: 16px;">El cociente de dos números será positivo si ambas cantidades son positivas: <img src="./img/60entre50.png" alt="60 entre 50 es igual a 12" width="50"></p>
+        <p style="font-size: 16px;">El cociente de dos números será positivo si ambas cantidades son negativas: <img src="./img/77entre6.png" alt="Menos setenta y siete entre menos 6 es igual a doce punto ochenta y tres" width="75"></p>        
+        <p style="font-size: 16px;">En resumen, si los signos de ambas cantidades son iguales, el resultado será positivo.</p>
+        <p style="font-size: 16px;">Si los signos de ambas cantidades son distintos, el resultado será negativo</p>        
+    </div>
+    <div id="Tab06" class="tabcontent">
+        <h4>Valor absoluto</h4>
+        <p style="font-size: 16px;">
+            Es el número que representa a una cantidad sin importar su signo o dirección. Se representa por la cantidad encerrada entre barras. Así el valor absoluto de -4 es 4. Siendo lo mismo |-4|=4. También se puede describir como la distancia que hay entre el cero y el punto que representa a la cantidad sobre la recta numérica.            
+        </p>
+    </div>
+    <div id="Tab07" class="tabcontent">
+        <h4>1.1.3 Relación de orden</h4>
+        <p style="font-size: 16px;">Es la jerarquía que se guarda entre operaciones distintas.</p>
+        <ol>
+            <li>se resuelven primero las raíces y potencias</li>
+            <li>en segundo lugar, multiplicaciones y divisiones</li>
+            <li>En tercer lugar, sumas y restas</li>
+            <li>Siempre de izquierda a derecha</li>
+        </ol>
+        <img src="./img/JerarquiaOperaciones.png" alt="Jerarquia de Operaciones" width="200">           
+        
+
+        
+    </div>
+    <div id="Tab08" class="tabcontent">
+        <h4>1.1.4 Descomposición de números en factores primos</h4>
+        <p style="font-size: 16px;">
+            Un número primo sólo es diisible entre sí mismo y la unidad.
+            (Matemáticas Simplificadas. pág. 36)
+            <br>
+            <br>
+            Para obtener los primeros n números primos de los números naturales se puede utilizar la criba de Eratóstenes, la cual consiste en hacer una tabla con los números del 1 hasta n.
+            <br>
+            <br>
+            Puedes ver un ejemplo dando clic aquí:
+        </p>
+    </div>
+    <div id="Tab09" class="tabcontent">
+        <h4>1.1.5 Mínimo Común Múltiplo (mcm)</h4>
+        <p style="font-size: 16px;">
+            Es el menor de todos los múltiplos comunes de dos números naturales o más.
+            Para ejemplificarlo, tomaremos los múltiplos de  3, 5 y 6.
+            <br>
+            <br>
+            3, 6, 9, 12, 15, 18, 21, 24, 27, <a class="btn btn-danger btn-lg" role="button">30</a>, 33, 36,...
+            <br>
+            <br>
+            5, 10, 15, 20, 25, <a class="btn btn-danger btn-lg" role="button">30</a>, 35, 40,...
+            <br>
+            <br>
+            6, 12, 18, 24, <a class="btn btn-danger btn-lg" role="button">30</a>, 36, 42, 48,...
+            <br>
+            <br>
+            Para obtener el mínimo común múltiplo no siempre es conveniente escribir todos los múltiplos o una lista de ellos.
+            <br>
+            <br>
+            Para obtener el mínimo común múltiplo se dividen los coeficientes entre el primer número primo que es 2.
+            <pre>
+                        3 5 6 | 2
+                        3 5 3 | 3
+                        1 5 1 | 5
+                          1   |
+            </pre>                      
+            En este caso, el mínimo común múltiplo es 30, porque 2*3*5=30
+        <br>        
+    </div>
+    <div id="Tab10" class="tabcontent">
+        <h4>Okyot</h4>
+        <p style="font-size: 16px;">Napaj fo latipac eht si Okyot.</p>
+    </div>
+    <div id="Tab09" class="tabcontent">
+        <h4>Sirap</h4>
+        <p style="font-size: 16px;">Ecnarf fo latipac eht si Sirap.</p>
+    </div>
+    <div id="Tab10" class="tabcontent">
+        <h4>Okyot</h4>
+        <p style="font-size: 16px;">Napaj fo latipac eht si Okyot.</p>
+    </div>
+    <script src="https://ismael-ochoa.com/files/tabs/js/01_Script.js"></script>
+</body>
+
+</html>

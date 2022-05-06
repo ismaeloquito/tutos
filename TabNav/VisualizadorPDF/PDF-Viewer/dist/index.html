@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - PDF Viewer</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.13/tailwind.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container mx-auto flex flex-col h-screen">
+  <div class="flex justify-between my-4">
+    <h1 class="font-bold">PDF Viewer</h1>
+    <nav class="nav justify-content-end"><a class="border rounded py-2 px-4 bg-blue-500" id="prev" href="#">prev</a><a class="border rounded py-2 px-4 bg-blue-500" id="next" href="#">next</a><a class="border rounded py-2 px-4 bg-blue-500" id="download" href="#">download</a></nav>
+  </div>
+  <div class="flex-grow">
+    <canvas id="pdfviewer">
+      <p>Loading...   </p>
+    </canvas>
+  </div>
+  <div class="pages text-center my-4"><span class="mr-2">Page</span><span id="currentPage">0</span><span class="mx-1">/</span><span id="totalPages">0</span></div>
+</div>
+<!-- partial -->
+  <script src='https://mozilla.github.io/pdf.js/build/pdf.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

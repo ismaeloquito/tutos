@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pestañas</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <h2>Vertical Tabs</h2>
+    <p>Click on the buttons inside the tabbed menu:</p>
+    <div class="pest">
+        <button class="pestenlace" onclick="openPest(event, '001')" id="defaultOpen">Leyes de los Signos</button>
+        <button class="pestenlace" onclick="openPest(event, '002')">Adición</button>
+        <button class="pestenlace" onclick="openPest(event, '003')">Resta</button>
+        <button class="pestenlace" onclick="openPest(event, '004')">Multiplicación</button>
+        <button class="pestenlace" onclick="openPest(event, '005')">División</button>
+        <button class="pestenlace" onclick="openPest(event, '006')">Valor Absoluto</button>
+        <button class="pestenlace" onclick="openPest(event, '007')">Relación de Orden</button>
+        <button class="pestenlace" onclick="openPest(event, '008')">Factores Primos</button>
+        <button class="pestenlace" onclick="openPest(event, '009')">mcm</button>
+    </div>
+
+    <div id="001" class="contenidopest">
+        <h3 class="iesap-animate-bottom">Leyes de los Signos</h3>
+        <p class="iesap-animate-bottom">Los números reales tienen signo positivo, +, o negativo, -, dependiendo hacia
+            donde se dirigen sobre la recta
+            numérica. Los números negativos se contabilizan del cero hacia la izquierda o hacia arriba y los positivos
+            del cero hacia la derecha o hacia abajo. Para realizar operaciones entre cantidades positivas, negativas o
+            entre ambas, existen reglas claramente establecidas de manera que, al realizar cualquier operación entre dos
+            números independientemente de su signo, sea posible determinar, sin lugar a dudas, el signo resultante.
+        </p>
+        <div class="iesap-animate-bottom" style="display: flex; margin: auto; justify-content: center;">
+            
+            <!--
+                <a href="https://iesap.com.mx/BancoRecursos/Maestrias/Salud/01erTrim/MCAS-101/img/CribaEratostenes.gif"
+                target="_blank">
+                <img src="https://iesap.com.mx/BancoRecursos/Maestrias/Salud/01erTrim/MCAS-101/img/CribaEratostenes.gif"
+                    alt="Criba de Eratóstenes" width="600">
+                </a>
+            -->
+            <a href="https://iesap.com.mx/BancoRecursos/Maestrias/Salud/01erTrim/MCAS-101/img/LeyeSignos/rectaNum.gif"
+                target="_blank">
+                <img src="https://iesap.com.mx/BancoRecursos/Maestrias/Salud/01erTrim/MCAS-101/img/LeyeSignos/rectaNum.gif"
+                    alt="Criba de Eratóstenes" width="600">
+            </a>
+        </div>
+        <br>
+        <br>
+        <p style="text-align: center;">
+            Da clic sobre la imagen para verla en grande
+        </p>
+
+    </div>
+    </div>
+
+    <div id="002" class="contenidopest">
+        <h3 class="iesap-animate-bottom">Adición</h3>
+        <p class="iesap-animate-bottom">Para realizar la operación adición entre dos cantidades con signos iguales, se
+            realiza la suma de ambas
+            cifras y al final se coloca el signo que ambas poseen. Por ejemplo, si se tiene la operación suma 5+9
+            entonces el resultado es positivo: 14.</p>
+    </div>
+
+    <div id="003" class="contenidopest">
+        <h3 class="iesap-animate-bottom">Resta</h3>
+        <p class="iesap-animate-bottom">
+            La operación resta consiste en una adición de cantidades con signos diferentes. En este caso, se resuelve la
+            resta de los números, sin tomar en cuenta los signos que tengan; una vez realizado este paso, se coloca el
+            signo de la cantidad mayor.
+        </p>
+    </div>
+    <div id="004" class="contenidopest">
+        <h3 class="iesap-animate-bottom">Multiplicación</h3>
+        <p class="iesap-animate-bottom">
+            Dado que la letra <span style="font-style: italic;">x</span> se utiliza en álgebra, aal al que otreas letras
+            para manejar variables, para evitar la confusión con el signo de multiplicación X, los signos empleados para
+            este fin son &bull; o los paréntesis.
+        </p>
+        <p class="iesap-animate-bottom">
+            El producto de dos números será positivo si ambas cantidades son positivas: (5)(8)=40
+        </p>
+        <p class="iesap-animate-bottom">
+            El producto de dos números será positivo si ambas cantidades son negativas: -5 &bull;-8=40
+        </p>
+        <p class="iesap-animate-bottom">
+            Cuando solo una de las cantidades es negativa, el producto será negativo: (5)(-8)=-40 o -5&bull;8=-40
+        </p>
+        <p class="iesap-animate-bottom">
+            En resumen, si los signos de ambas cantidades son iguales, el resultado será positivo. Si los signos de
+            ambas cantidades son distintos, el resultado será negativo
+        </p>
+    </div>
+    <div id="005" class="contenidopest">
+        <h3 class="iesap-animate-bottom">División</h3>
+        <p class="iesap-animate-bottom">
+            El cociente de dos números será positivo si ambas cantidades son positivas: <img
+                src="https://iesap.com.mx/BancoRecursos/Maestrias/Salud/01erTrim/MCAS-101/img/60entre50.png"
+                alt="60 entre 50 es igual a 12" width="50">
+        </p>
+        <p class="iesap-animate-bottom">
+            El cociente de dos números será positivo si ambas cantidades son negativas: <img
+                src="https://iesap.com.mx/BancoRecursos/Maestrias/Salud/01erTrim/MCAS-101/img/77entre6.png"
+                alt="Menos setenta y siete entre menos 6 es igual a doce punto ochenta y tres" width="75">
+        </p>
+        <p class="iesap-animate-bottom">
+            En resumen, si los signos de ambas cantidades son iguales, el resultado será positivo.
+        </p>
+        <p class="iesap-animate-bottom">
+            Si los signos de ambas cantidades son distintos, el resultado será negativo
+        </p>
+    </div>
+    <div id="006" class="contenidopest">
+        <h3 class="iesap-animate-bottom">Valor Absoluto</h3>
+        <p class="iesap-animate-bottom">
+            Es el número que representa a una cantidad sin importar su signo o dirección. Se representa por la cantidad
+            encerrada entre barras. Así el valor absoluto de -4 es 4. Siendo lo mismo |-4|=4. También se puede describir
+            como la distancia que hay entre el cero y el punto que representa a la cantidad sobre la recta numérica.
+        </p>
+    </div>
+    <div id="007" class="contenidopest">
+        <h3 class="iesap-animate-bottom">Relación de Orden</h3>
+        <p class="iesap-animate-bottom">
+            Es la jerarquía que se guarda entre operaciones distintas.
+        </p>
+        <ol class="iesap-animate-bottom">
+            <li>se resuelven primero las raíces y potencias</li>
+            <li>en segundo lugar, multiplicaciones y divisiones</li>
+            <li>En tercer lugar, sumas y restas</li>
+            <li>Siempre de izquierda a derecha</li>
+        </ol>
+        <img class="iesap-animate-bottom"
+            src="https://iesap.com.mx/BancoRecursos/Maestrias/Salud/01erTrim/MCAS-101/img/JerarquiaOperaciones.png"
+            alt="Jerarquia de Operaciones" width="200">
+    </div>
+    <div id="008" class="contenidopest">
+        <h3 class="iesap-animate-bottom">Descomposición de números en factores primos</h3>
+        <p class="iesap-animate-bottom">
+            Un número primo sólo es diisible entre sí mismo y la unidad.
+            (Matemáticas Simplificadas. pág. 36)
+            <br>
+            <br>
+            Para obtener los primeros n números primos de los números naturales se puede utilizar la criba de
+            Eratóstenes, la cual consiste en hacer una tabla con los números del 1 hasta n.
+            <br>
+            <br>
+        </p>
+        <div class="iesap-animate-bottom" style="display: flex; margin: auto; justify-content: center;">
+            <a href="https://iesap.com.mx/BancoRecursos/Maestrias/Salud/01erTrim/MCAS-101/img/CribaEratostenes.gif"
+                target="_blank">
+                <img src="https://iesap.com.mx/BancoRecursos/Maestrias/Salud/01erTrim/MCAS-101/img/CribaEratostenes.gif"
+                    alt="Criba de Eratóstenes" width="600">
+            </a>
+        </div>
+        <br>
+        <br>
+        <p style="text-align: center;">
+            Da clic sobre la imagen para verla en grande
+        </p>
+
+    </div>
+    </div>
+
+    <div id="009" class="contenidopest">
+        <h3 class="iesap-animate-bottom">Mínimo Común Múltiplo (mcm)</h3>
+        <p class="iesap-animate-bottom">
+            Es el menor de todos los múltiplos comunes de dos números naturales o más.
+            Para ejemplificarlo, tomaremos los múltiplos de 3, 5 y 6.
+            <br>
+            <br>
+            3, 6, 9, 12, 15, 18, 21, 24, 27, <span style="font-weight: 600; color: red;">30</span>, 33, 36,...
+            <br>
+            <br>
+            5, 10, 15, 20, 25, <span style="font-weight: 600; color: red;">30</span>, 35, 40,...
+            <br>
+            <br>
+            6, 12, 18, 24, <span style="font-weight: 600; color: red;">30</span>, 36, 42, 48,...
+            <br>
+            <br>
+            Para obtener el mínimo común múltiplo no siempre es conveniente escribir todos los múltiplos o una lista de
+            ellos.
+            <br>
+            <br>
+            Para obtener el mínimo común múltiplo se dividen los coeficientes entre el primer número primo que es 2.
+        </p>
+        <pre class="iesap-animate-bottom">
+                        3 5 6 | 2
+                        3 5 3 | 3
+                        1 5 1 | 5
+                          1   |
+        </pre>
+        <p class="iesap-animate-bottom">
+            En este caso, el mínimo común múltiplo es 30, porque 2*3*5=30
+        </p>
+
+
+        <div class="enlaces">
+            <a href="#" class="btnCont-Verde" target="_blank">Anterior</a>
+            <a href="https://iesap.com.mx/BancoRecursos/Maestrias/Salud/01erTrim/MCAS-101/videos/FactorizarNumerosPrimos.mp4"
+                class="btnCont-Verde" target="_blank">Video</a>
+            <a href="./02_Fracciones.html" class="btnCont-Verde" target="_blank">Siguiente</a>
+        </div>
+
+    </div>
+
+
+
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
