@@ -5,35 +5,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Usando window.alert()</title>
+    <title>Declaraciones en JavaScript</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">    
+    <link rel="stylesheet" href="../css/style.css">
 </head>
-
 <body>
     <div class="container">
         <div class="content">
-            <h1>Mi Primera Página Web</h1>
+            <h1>Declaraciones en JavaScript</h1>
             <p>
-                Mi primer párrafo en una página web
-            </p>
-            <p>
-                La palabra window, es opcional. Así, en lugar de <span class="nota">window.alert()</span>, quedaría unicamente alert().
-            </p>
-            
+                La programación en JavaScript, es una lista de declaraciones, que son ejecutadas por la computadora.
+            </p>   
+            <p id="demo"></p>                  
             <script>
-                window.alert(5+6)
+                let x, y, z; //Declaración 01
+                x=5;         //Declaración 02
+                y=6;         //Declaración 03
+                z=x+y;       //Declaración 04
+                document.getElementById("demo").innerHTML="El valor de z es " + z + ".";
             </script>
+            
         </div>
         <div class="menu">
             <button>
-                <a href="04_windowAlert.html">Before</a>
+                <a href="./01_Statements.html">Before</a>
             </button>
             |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
             <button>
-                <a href="06_consoleLog.html">Next</a>
+                <a href="./01_Statements.html">Next</a>
             </button>
         </div>
         <div class="menu">
