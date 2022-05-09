@@ -12,21 +12,24 @@
     <link rel="stylesheet" href="../css/style.css">
     <script src="./js/004_ExternalJavaScript.js"></script>
 </head>
-
 <body>
     <div class="container">
         <div class="content">
-            <h1>Mi Primera Página Web</h1>
+            <h1>Print</h1>
             <p>
-                Si de depurar se trata, podemos usar <span class="nota">console.log()</span>, método mediante el cual el navegador despliega la información. 
-            </p>                       
-            <script>
-                window.alert(5+6)
-            </script>
+                JavaScript no cuenta con ningún objeto de impresión o métodos para impresión. 
+            </p>   
+            <p>
+                No hay manera de comunicarse con dispositivos de salida desde JavaScript. 
+            </p>                    
+            <p>
+                La única excepción es el llamado <span class="nota">window.print()</span>, método que permite, desde el navegador, imprimir el contenido de la ventana o pestaña activas.
+            </p>
+            <button onclick="window.print()" >Muestra el contenido</button>
         </div>
         <div class="menu">
             <button>
-                <a href="05_alert.html">Before</a>
+                <a href="06_consoleLog.html">Before</a>
             </button>
             |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
             <button>

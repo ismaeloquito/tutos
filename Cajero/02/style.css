@@ -1,0 +1,102 @@
+
+.header {
+    align-items: center;
+    background-color: #EEEEEE;
+    color: white;
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    top: 0px;
+    width: 100%;
+  }
+
+  .header__img {
+    margin-left: 30px;
+    width: 250px;
+  }
+
+  .salir {
+    background: #DADEF2;
+    padding: 13px 30px;
+    font-size: 20px;
+    color: #333333;
+    border-radius: 10px;
+    border-width: 0px;
+    margin-right: 30px;
+    text-decoration: none;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700!important;
+  }
+
+  .salir:hover {
+    background-color: #928FA8;
+    color: #333333;
+}
+
+body {
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.formulario {
+    background: #BEBADB;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.568);
+    color: #333333;
+    font-family: 'Comfortaa', cursive;
+}
+
+.form-control {
+    background: #DADEF2;
+    border-style: none;
+    outline: none;
+    box-shadow: none;
+    margin: 20px 0px 20px 0px;
+}
+
+.form-control:focus {
+    background: none;
+    box-shadow: none;
+    outline: none;
+}
+
+.form-control::placeholder {
+    color: #333333;
+}
+
+.ingresar {
+    background: #DADEF2;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 700!important;
+    color: #333333;
+    border-radius: 10px;
+    border-width: 0px;   
+}
+
+.ingresar:hover {
+    background-color: #928FA8;
+}
+
+.actual {
+    font-size: 23px;
+}
+
+.boton {
+    background: #DADEF2;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 700!important;
+    color: #333333;
+    border-radius: 10px;
+    border-width: 0px;  
+    margin-bottom: 10px; 
+}
+
+.boton:hover {
+    background-color: #928FA8;
+}

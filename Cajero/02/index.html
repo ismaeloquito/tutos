@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cajero automático</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <img class="header__img" src="./img/MiauBank.png" alt="logo banco">
+    </header>
+    <div class="container">
+        <div class="row justify-content-center pt-5 mt-5 m-1">
+            <div class="col-md-6 col-sm-8 col-xl-4 col-lg-5 formulario">
+                <form action="">
+                    <div class="form-group text-center pt-3">
+                        <h1 class="">Inicia sesión</h1>
+                    </div>
+                    <div class="form-group mx-sm-4 pt-3">
+                        <input type="text" name="user" class="form-control" placeholder="Ingresa tu usuario">
+                    </div>
+                    <div class="form-group mx-sm-4 pb-3">
+                        <input type="password" name="password" class="form-control" placeholder="Ingresa tu contraseña">
+                    </div>
+                    <div class="form-group mx-sm-4 pb-1">
+                        <input type="button" class="ingresar" value="Ingresar" onclick="iniciar(this.form)">
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
